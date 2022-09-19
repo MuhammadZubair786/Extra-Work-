@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pre()" id="pre">pre</button>
+    <button onclick="next()" id="next">next</button>
+
+    <div>
+        <img src="" width="200" height="200" id="imgsrc">
+    </div>
+
+    <script>
+        image = ['i1.jpg','i2.jpg','i3.jpg']
+        index=0
+        img = document.getElementById('imgsrc')
+        img.src=image[index]
+
+        function next(){
+   
+            index++;
+            document.getElementById('pre').disabled = false;
+            img.src=image[index]
+            if(index>=image.length-1){
+                document.getElementById('next').disabled = true;
+            }
+              
+        }
+
+        function pre(){
+         
+         
+            index--;
+            document.getElementById('next').disabled = false;
+            img.src=image[index]
+        
+        if(index <= 0){
+                document.getElementById('pre').disabled = true;
+
+
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.list{
+    margin-top: 20px; 
+    font-size: 20px; 
+   
+}
+.edit{
+    float: right;
+    margin-left:2%;
+}
+
+.delete{
+    float: right;
+    margin-left: 2%;   
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <!-- <style>
+        .para{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="getcity();"><br>
+        City:<br>
+        <input type="text" id="city" readonly>
+        </form> -->
+
+        <!-- <div >
+            <img onclick="show()" id="add"  src="data:image/png;base64,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">
+            <p id="para" class="para" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed error sunt alias! Dicta aliquid itaque numquam nostrum ratione impedit, reiciendis vel quam minima accusamus suscipit nam eos earum nulla odit?</p>
+            <img onclick="hid()"  class="para"  id="hid" src="data:image/png;base64,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">
+        </div> -->
+
+        <!-- <p id="slowLoris">
+            Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+            <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum, commodi nemo eius rem aspernatur, exercitationem ea saepe sed nostrum in? Molestiae, minima sed rerum ab expedita dolore quae aspernatur?
+            <a href="#" id="lnk" onclick="show()">read more</a>
+             <i class="para" id="para">   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio at earum nesciunt maxime nemo veritatis itaque quos, eius, totam cupiditate et quo saepe ut. Suscipit temporibus maiores magnam sed esse!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio at earum nesciunt maxime nemo veritatis itaque quos, eius, totam cupiditate et quo saepe ut. Suscipit temporibus maiores magnam sed esse!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam perferendis similique, fugit libero exercitationem reprehenderit molestiae officiis. Quasi ipsam quas earum et, necessitatibus, est quia repellendus amet nobis odit maxime.
+            </i>
+            <a href="#" id="hid" class="para" onclick="hid()">less</a>
+        </p>
+
+
+        <select onchange="test()" id="select_zip">
+            <option value=""></option>
+            <option value="7110">7110</option>
+            <option value="7112">7112</option>
+
+        </select>
+        <input type="text"readonly id="city" > -->
+
+        <div style="width: 300px;margin-right: auto;margin-left: auto;">
+            <button onclick="innertext()">Inner Text</button>
+   </div>
+
+        <div id="text"  style="border:2px solid black;height: 400px;margin-top: 20px;width: 400px;margin-left: auto;margin-right: auto;">
+     </div>
+<script>
+    function innerhtml(){
+        // alert('Inner Html')
+        var  a = '<h1>Hello</h1><img height="200"+px width="400px" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80">';
+        var d = document.getElementById('text')
+        d.innerHTML= a
+      
+    }
+    function innertext(){
+        // alert('Inner Html')
+        var  a = '<h1>Hello</h1><img height="200"+px width="400px" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80">';
+        var d = document.getElementById('text')
+        d.innerText= a
+       
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="select()">Select</button>
+    <button onclick="upload()">Upload</button>
+    <button onclick="abc()">DATA</button>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+      // Your web app's Firebase configuration
+      var  firebaseConfig = {
+    apiKey: "AIzaSyD3vUr2dqgSyR4vGU-fDwF-vTzxh6J0Wuk",
+    authDomain: "first-project-91370.firebaseapp.com",
+    projectId: "first-project-91370",
+    storageBucket: "first-project-91370.appspot.com",
+    messagingSenderId: "629838050079",
+    appId: "1:629838050079:web:724232db7cb92057c1362a"
+  };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+  </script>
+    <script src="app.js"></script>
+</body>
+</html>

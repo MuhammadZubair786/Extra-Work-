@@ -1,0 +1,113 @@
+/* body{
+    background-color: black;
+}
+@media screen and (max-width:900px) {
+    body{
+        background-color: brown;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-color: rgb(63, 165, 42);
+    }
+    
+}
+@media screen and (max-width:400px) {
+    body{
+        background-color: rgb(165, 42, 124);
+    }
+    
+} */
+/* .nav{
+    overflow: hidden;
+    background-color: brown;
+}
+.nav a{
+    font-size: 30px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: rgb(202, 26, 26);
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.nav a:hover{
+    background-color: grey;
+}
+
+@media screen and (max-width:400px) {
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+
+    
+}
+ */
+
+ /* .wrap{
+     overflow: auto;
+ } */
+/* 
+ .left{
+     float: none;
+     width: auto;
+ } */
+
+ /* ul{
+     margin: 0;
+     padding: 0;
+ }
+ ul li{
+     background-color: brown;
+     border: 1px solid yellow;
+     border-radius: 4px;
+     list-style-type: none;
+     margin: 4px;
+     padding: 2px;
+     height: 50px;
+ }
+
+ @media screen and (min-width:680px) {
+     ul{
+         width: 200px;
+         float: left;
+     }
+
+     
+ } */
+
+
+.one{
+    background-color: chartreuse;
+}
+.two{
+    background-color: cornflowerblue;
+}
+.three{
+    background-color: crimson;
+}
+.four{
+    background-color: cyan;
+}
+.column{
+    float: left;
+    width: 25%;
+    
+}
+
+@media screen and (max-width:900px) {
+    .column{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .column{
+        width:100%
+    }
+    
+}
